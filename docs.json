@@ -16,7 +16,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "/pages/index",
+              "index",
               "/pages/quickstart",
               "/pages/development"
             ]
