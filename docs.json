@@ -20,6 +20,12 @@
               "/pages/quickstart",
               "/pages/development"
             ]
+          },
+          {
+            "group": "Changelogs",
+            "pages": [
+              "/pages/changelog"
+            ]
           }
         ]
       }
@@ -35,11 +41,6 @@
           "anchor": "Support",
           "href": "mailto:info@mcpmate.io",
           "icon": "envelope"
-        },
-        {
-          "anchor": "Changelog",
-          "href": "/changelog",
-          "icon": "history"
         }
       ]
     }
