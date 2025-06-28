@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "MCPMate",
   "colors": {
     "primary": "#16A34A",
@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Get Started",
+        "tab": "User Guide",
         "groups": [
           {
             "group": "Get Started",
@@ -34,7 +34,7 @@
         {
           "anchor": "Support",
           "href": "mailto:info@mcpmate.io",
-          "icon": "mail"
+          "icon": "envelope"
         }
       ]
     }
