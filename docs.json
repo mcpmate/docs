@@ -35,6 +35,11 @@
           "anchor": "Support",
           "href": "mailto:info@mcpmate.io",
           "icon": "envelope"
+        },
+        {
+          "anchor": "Changelog",
+          "href": "/changelog",
+          "icon": "history"
         }
       ]
     }
