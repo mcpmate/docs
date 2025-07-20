@@ -1,0 +1,84 @@
+---
+title: "兼容应用"
+description: "管理 MCP 兼容的应用程序及其连接"
+sidebarLabel: "兼容应用"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+<img
+  className="block dark:hidden"
+  src="/i18n/zh/images/client-apps.jpg"
+  alt="Client Apps"
+  title={true}
+/>
+
+## 自动检测
+
+MCPMate 扫描您的系统以检测支持的应用程序：
+
+<CardGroup cols={2}>
+  <Card title="Cursor" icon="code">
+    支持 MCP 的 AI 驱动代码编辑器
+  </Card>
+  <Card title="Claude Desktop" icon="message-circle">
+    Anthropic 的桌面聊天应用程序
+  </Card>
+  <Card title="Zed" icon="zap">
+    高性能协作代码编辑器
+  </Card>
+  <Card title="..." icon="cherry">
+    更多支持 MCP 的应用程序
+  </Card>
+</CardGroup>
+
+## 管理连接
+
+对于每个检测到的应用程序，您可以：
+
+- **启用/禁用**: 开启或关闭 MCP 集成
+- **查看状态**: 查看连接健康状况和最后活动时间
+- **配置设置**: 设置应用程序特定的代理设置
+- **重定向**: 选择要使用的配置套件
+
+<Callout type="info">
+  在 MCPMate 中启用/禁用 MCP 集成后，必须重启应用程序。
+</Callout>
+
+## 手动配置
+
+如果您的应用程序未被自动检测到：
+
+1. 点击 **添加自定义应用**
+2. 指定应用程序名称和 MCP 配置方法
+3. 选择连接类型（stdio、SSE 或 HTTP）
+4. 测试连接
+
+<div className="placeholder-screenshot">
+  📸 添加自定义应用对话框截图占位符
+</div>
+
+## 连接类型
+
+MCPMate 支持多种 MCP 连接方法：
+
+- **stdio**: 直接进程通信（最常见）
+- **SSE**: Server-Sent Events over HTTP
+- **HTTP**: RESTful API communication
+
+## 故障排除
+
+常见问题和解决方案：
+
+- **应用未检测到**: 确保应用安装在标准位置
+- **连接失败**: 检查应用权限和防火墙设置
+- **工具未显示**: 验证应用是否支持您的活动配置套件
+
+---
+
+<details>
+<summary>高级应用配置</summary>
+
+对于自定义设置，您可以手动编辑应用配置并指定自定义代理端点或身份验证方法。
+
+</details>

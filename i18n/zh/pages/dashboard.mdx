@@ -1,0 +1,74 @@
+---
+title: "仪表板"
+description: "监控 MCP 系统状态、资源使用和日志"
+sidebarLabel: "仪表板"
+---
+
+import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
+
+<img
+  className="block dark:hidden"
+  src="/i18n/zh/images/dashboard.jpg"
+  alt="Dashboard"
+  title={true}
+/>
+
+## 快速操作
+
+从仪表板，您可以：
+- 切换配置套件的开启/关闭
+- 重启有问题的服务器
+- 查看详细的服务器信息
+- 访问系统设置
+
+## 系统状态
+
+<CardGroup cols={3}>
+  <Card title="Active Suits" icon="layer-group">
+    显示当前启用的配置套件及其服务器数量。
+  </Card>
+  <Card title="Running Servers" icon="server">
+    MCP 服务器的实时数量，带有健康指示器（绿色/黄色/红色）。
+  </Card>
+  <Card title="Connected Apps" icon="plug">
+    当前使用 MCPMate 代理的客户端应用程序数量。
+  </Card>
+</CardGroup>
+
+## 资源使用
+
+监控 CPU 和内存使用情况以确保最佳性能。
+
+- **CPU 使用率**：MCPMate 和连接的服务器的实时处理器利用率
+- **内存使用率**：RAM 消耗，按组件分解
+- **网络**：MCP 通信的数据传输速率
+
+<Callout type="info">
+    资源指标每 10 秒更新一次。高使用率可能表明服务器配置问题。
+</Callout>
+
+## 系统日志
+
+系统日志面板显示以下内容：
+- 服务器启动/关闭事件
+- 工具执行请求和响应
+- 客户端应用程序连接状态
+- 配置更改
+- 错误消息和警告
+
+### 日志过滤
+
+使用过滤器控制来：
+- 显示特定服务器或套件的日志
+- 按日志级别（Info, Warning, Error）过滤
+- 搜索特定消息或时间戳
+- 导出日志用于故障排除
+
+---
+
+<details>
+<summary>高级监控</summary>
+
+要进行详细的性能分析，请检查各个服务器状态页面，并考虑为特定组件启用调试日志。
+
+</details>

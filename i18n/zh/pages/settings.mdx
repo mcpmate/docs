@@ -1,0 +1,104 @@
+---
+title: "设置"
+description: "配置 MCPMate 的偏好设置和系统选项"
+sidebarLabel: "设置"
+---
+
+import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
+
+<div className="placeholder-screenshot">
+  📸 Settings interface screenshot placeholder
+</div>
+
+## General Settings
+
+<CardGroup cols={2}>
+  <Card title="Startup" icon="power">
+    Launch at system startup and auto-enable default suits
+  </Card>
+  <Card title="Appearance" icon="palette">
+    Light/dark theme and UI scaling options
+  </Card>
+  <Card title="Notifications" icon="bell">
+    System alerts and status notifications
+  </Card>
+  <Card title="Updates" icon="download">
+    Automatic update checks and installation
+  </Card>
+</CardGroup>
+
+## Network & Proxy
+
+<Tabs>
+  <Tab label="Proxy Settings">
+    Configure MCPMate's internal proxy server:
+    - **Port**: Default proxy port (usually 3000)
+    - **Host binding**: Local only or network accessible
+    - **SSL/TLS**: Enable secure connections
+    - **CORS**: Cross-origin request settings
+  </Tab>
+  
+  <Tab label="External Proxy">
+    Route MCPMate traffic through external proxies:
+    - **HTTP proxy**: Corporate or privacy proxy settings
+    - **Authentication**: Username/password for proxy access
+    - **Bypass rules**: Direct connections for specific hosts
+  </Tab>
+</Tabs>
+
+## Advanced Settings
+
+### Performance
+- **Resource limits**: CPU and memory usage caps
+- **Concurrent connections**: Maximum simultaneous client apps
+- **Cache settings**: Local storage and cleanup policies
+- **Logging level**: Control log verbosity and retention
+
+### Security
+- **API authentication**: Secure access to MCPMate's management API
+- **Client validation**: Verify connecting applications
+- **Data encryption**: Encrypt sensitive configuration data
+
+<Callout type="warning">
+  Advanced settings can affect system stability. Change only if you understand the implications.
+</Callout>
+
+## Data & Storage
+
+<div className="placeholder-screenshot">
+  📸 Storage management interface screenshot placeholder
+</div>
+
+### Storage Locations
+- **Configuration**: Where suits and server settings are stored
+- **Cache**: Temporary data and resource cache location
+- **Logs**: System and application log file location
+- **Backups**: Automatic backup storage directory
+
+### Data Management
+- **Export settings**: Backup all configurations
+- **Import settings**: Restore from backup files
+- **Reset to defaults**: Clear all custom configurations
+- **Clean cache**: Remove temporary files and data
+
+## Integration Settings
+
+### System Integration
+- **Menu bar icon**: Show/hide status indicator
+- **Dock integration**: App behavior in macOS dock
+- **Spotlight indexing**: Make configurations searchable
+- **Quick Actions**: Keyboard shortcuts for common tasks
+
+### Third-party Integration
+- **Cloud sync**: Sync settings across devices (future feature)
+- **Team sharing**: Share configurations with teammates
+- **External tools**: Integration with development environments
+
+---
+
+<details>
+<summary>Enterprise configuration</summary>
+
+Additional settings for enterprise deployments including centralized configuration management, audit logging, and compliance features.
+
+</details>

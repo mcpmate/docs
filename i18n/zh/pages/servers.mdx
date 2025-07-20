@@ -1,0 +1,104 @@
+---
+title: "服务器"
+description: "管理 MCP 服务器及其功能"
+sidebarLabel: "服务器"
+---
+
+import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
+
+<div className="placeholder-screenshot">
+  📸 Servers management interface screenshot placeholder
+</div>
+
+## Available Servers
+
+MCPMate can connect to various types of MCP servers:
+
+<CardGroup cols={2}>
+  <Card title="Context7" icon="book-open">
+    Library documentation and code examples
+  </Card>
+  <Card title="Fetch" icon="download">
+    Web content retrieval and processing
+  </Card>
+  <Card title="Firecrawl" icon="spider">
+    Advanced web scraping and crawling
+  </Card>
+  <Card title="Everything" icon="search">
+    File system search and indexing
+  </Card>
+</CardGroup>
+
+## Adding Servers
+
+<Tabs>
+  <Tab label="From Registry">
+    1. Click **Add Server** in the Servers panel
+    2. Browse the built-in server registry
+    3. Select a server and click **Install**
+    4. Configure any required settings (API keys, endpoints)
+    5. Test the connection and save
+  </Tab>
+  
+  <Tab label="Custom Server">
+    1. Choose **Add Custom Server**
+    2. Specify connection details:
+       - **Name**: Descriptive server name
+       - **Type**: stdio, SSE, or HTTP
+       - **Command/URL**: Execution command or endpoint
+       - **Environment**: Required environment variables
+    3. Test and save the configuration
+  </Tab>
+</Tabs>
+
+## Server Status
+
+Each server shows:
+- **Health indicator**: Green (healthy), Yellow (warning), Red (error)
+- **Last activity**: When the server was last used
+- **Tool count**: Number of available tools
+- **Resource usage**: CPU and memory consumption
+
+<Callout type="info">
+  Servers are started on-demand and automatically stopped when not in use to save resources.
+</Callout>
+
+## Server Configuration
+
+<div className="placeholder-screenshot">
+  📸 Server configuration dialog screenshot placeholder
+</div>
+
+### Connection Settings
+- **Protocol**: Choose between stdio, SSE, or HTTP
+- **Timeout**: Request timeout in seconds
+- **Retry policy**: Automatic retry on failure
+- **Rate limiting**: Requests per second limits
+
+### Environment Variables
+- **API Keys**: Secure storage for authentication
+- **Endpoints**: Custom server URLs
+- **Debug flags**: Enable detailed logging
+
+### Resource Limits
+- **Memory limit**: Maximum RAM usage
+- **CPU throttling**: Prevent excessive CPU usage
+- **Concurrent requests**: Limit parallel operations
+
+## Troubleshooting
+
+Common server issues:
+
+- **Connection failed**: Check network settings and credentials
+- **High resource usage**: Review server configuration and limits
+- **Tools not appearing**: Verify server is enabled in active config suit
+- **Timeout errors**: Increase timeout values or check server performance
+
+---
+
+<details>
+<summary>Advanced server management</summary>
+
+Configure custom health checks, set up server clustering for high availability, and implement custom authentication methods for enterprise deployments.
+
+</details>

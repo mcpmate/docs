@@ -9,38 +9,38 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "User Guide",
+        "language": "en",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "index",
-              "/pages/quickstart",
-              "/pages/support"
+              "i18n/en/index",
+              "i18n/en/pages/quickstart",
+              "i18n/en/pages/support"
             ]
           },
           {
             "group": "Features",
             "pages": [
-              "/pages/dashboard",
-              "/pages/client-apps",
-              "/pages/config-suits",
+              "i18n/en/pages/dashboard",
+              "i18n/en/pages/client-apps",
+              "i18n/en/pages/config-suits",
               {
                 "group": "MCP Servers",
                 "pages": [
-                  "/pages/servers",
-                  "/pages/tools",
-                  "/pages/prompts",
-                  "/pages/resources"
+                  "i18n/en/pages/servers",
+                  "i18n/en/pages/tools",
+                  "i18n/en/pages/prompts",
+                  "i18n/en/pages/resources"
                 ]
               },
               {
                 "group": "Others",
                 "pages": [
-                  "/pages/settings",
-                  "/pages/logs"
+                  "i18n/en/pages/settings",
+                  "i18n/en/pages/logs"
                 ]
               }
             ]
@@ -48,21 +48,55 @@
           {
             "group": "Changelog",
             "pages": [
-              "changelog"
+              "i18n/en/pages/changelog"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "zh",
+        "groups": [
+          {
+            "group": "开始使用",
+            "pages": [
+              "i18n/zh/index",
+              "i18n/zh/pages/quickstart",
+              "i18n/zh/pages/support"
+            ]
+          },
+          {
+            "group": "功能特性",
+            "pages": [
+              "i18n/zh/pages/dashboard",
+              "i18n/zh/pages/client-apps",
+              "i18n/zh/pages/config-suits",
+              {
+                "group": "MCP 服务器",
+                "pages": [
+                  "i18n/zh/pages/servers",
+                  "i18n/zh/pages/tools",
+                  "i18n/zh/pages/prompts",
+                  "i18n/zh/pages/resources"
+                ]
+              },
+              {
+                "group": "其他功能",
+                "pages": [
+                  "i18n/zh/pages/settings",
+                  "i18n/zh/pages/logs"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "更新日志",
+            "pages": [
+              "i18n/zh/pages/changelog"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Download",
-          "href": "https://mcpmate.io",
-          "icon": "download"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
