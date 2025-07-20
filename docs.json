@@ -28,21 +28,21 @@
               "/pages/client-apps",
               "/pages/config-suits",
               {
-                "group": "Servers",
+                "group": "MCP Servers",
                 "pages": [
                   "/pages/servers",
                   "/pages/tools",
                   "/pages/prompts",
                   "/pages/resources"
                 ]
+              },
+              {
+                "group": "Others",
+                "pages": [
+                  "/pages/settings",
+                  "/pages/logs"
+                ]
               }
-            ]
-          },
-          {
-            "group": "System",
-            "pages": [
-              "/pages/settings",
-              "/pages/logs"
             ]
           },
           {
