@@ -26,10 +26,15 @@
               "/pages/dashboard",
               "/pages/client-apps",
               "/pages/config-suits",
-              "/pages/servers",
-              "/pages/tools",
-              "/pages/prompts",
-              "/pages/resources"
+              {
+                "group": "Servers",
+                "pages": [
+                  "/pages/servers",
+                  "/pages/tools",
+                  "/pages/prompts",
+                  "/pages/resources"
+                ]
+              }
             ]
           },
           {
@@ -54,11 +59,6 @@
           "anchor": "Download",
           "href": "https://mcpmate.io",
           "icon": "download"
-        },
-        {
-          "anchor": "Support",
-          "href": "https://docs.mcpmate.io/support",
-          "icon": "envelope"
         }
       ]
     }
