@@ -1,0 +1,110 @@
+---
+title: "Config Suits"
+description: "Create and manage configuration presets for different workflows"
+sidebarLabel: "Config Suits"
+---
+
+import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
+
+# Config Suits
+
+Configuration suits bundle servers, tools, and prompts into reusable presets for different workflows and scenarios.
+
+<div className="placeholder-screenshot">
+  📸 Config Suits management interface screenshot placeholder
+</div>
+
+## What are Config Suits?
+
+A configuration suit is a named collection of:
+- MCP servers and their settings
+- Enabled tools and their priorities
+- Prompt libraries and templates
+- Resource access permissions
+
+Think of suits as "profiles" that you can switch between instantly.
+
+## Default Suits
+
+MCPMate ships with several pre-configured suits:
+
+<CardGroup cols={3}>
+  <Card title="Default" icon="home">
+    Basic MCP tools for general use
+  </Card>
+  <Card title="Coder" icon="code">
+    Development-focused servers and tools
+  </Card>
+  <Card title="Writer" icon="pen-tool">
+    Content creation and research tools
+  </Card>
+</CardGroup>
+
+## Creating Custom Suits
+
+<Tabs>
+  <Tab label="From Scratch">
+    1. Click **New Suit** in the Config Suits panel
+    2. Give it a descriptive name (e.g., "Data Analysis")
+    3. Add servers from the available list
+    4. Configure tool priorities and permissions
+    5. Save and activate
+  </Tab>
+  
+  <Tab label="Clone Existing">
+    1. Select an existing suit to use as a template
+    2. Click **Clone** and give it a new name
+    3. Modify servers, tools, or settings as needed
+    4. Save your customized version
+  </Tab>
+</Tabs>
+
+## Switching Suits
+
+<Callout type="info">
+  Switching suits takes effect immediately—no need to restart client apps.
+</Callout>
+
+To switch active suits:
+1. Open the Config Suits panel
+2. Click the toggle next to your desired suit
+3. Wait for the "Active" indicator to appear
+4. Your client apps now have access to the new tool set
+
+## Suit Management
+
+### Editing Suits
+- Modify server configurations
+- Add or remove tools
+- Adjust tool priorities
+- Update prompt libraries
+
+### Sharing Suits
+- Export suits as JSON files
+- Import suits from teammates
+- Version control for team consistency
+
+### Backup and Restore
+- Automatic backup before major changes
+- Manual export for safekeeping
+- Restore from backup if needed
+
+<div className="placeholder-screenshot">
+  📸 Suit editing interface screenshot placeholder
+</div>
+
+## Best Practices
+
+- **Descriptive names**: Use clear, workflow-specific names
+- **Minimal suits**: Include only necessary servers to reduce resource usage
+- **Regular cleanup**: Remove unused or outdated suits
+- **Team coordination**: Share suit configurations for consistent setups
+
+---
+
+<details>
+<summary>Advanced suit configuration</summary>
+
+You can create conditional rules, set resource limits per suit, and configure automatic suit switching based on active applications or time of day.
+
+</details>

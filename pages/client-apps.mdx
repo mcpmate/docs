@@ -1,0 +1,85 @@
+---
+title: "Client Apps"
+description: "Manage MCP-compatible applications and their connections"
+sidebarLabel: "Client Apps"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+# Client Apps
+
+MCPMate automatically detects and manages connections to MCP-compatible applications on your system.
+
+<div className="placeholder-screenshot">
+  📸 Client Apps list view screenshot placeholder
+</div>
+
+## Auto-Detection
+
+MCPMate scans your system for supported applications:
+
+<CardGroup cols={2}>
+  <Card title="Cursor" icon="code">
+    AI-powered code editor with MCP support
+  </Card>
+  <Card title="Claude Desktop" icon="message-circle">
+    Anthropic's desktop chat application
+  </Card>
+  <Card title="Zed" icon="zap">
+    High-performance collaborative code editor
+  </Card>
+  <Card title="Cherry Studio" icon="cherry">
+    Creative writing and content generation tool
+  </Card>
+</CardGroup>
+
+## Managing Connections
+
+For each detected app, you can:
+
+- **Enable/Disable**: Toggle MCP integration on or off
+- **View Status**: See connection health and last activity
+- **Configure**: Set app-specific proxy settings
+- **Redirect**: Choose which configuration suit to use
+
+<Callout type="info">
+  Apps must be restarted after enabling/disabling MCP integration in MCPMate.
+</Callout>
+
+## Manual Configuration
+
+If your app isn't auto-detected:
+
+1. Click **Add Custom App**
+2. Specify the application name and MCP configuration method
+3. Choose connection type (stdio, SSE, or HTTP)
+4. Test the connection
+
+<div className="placeholder-screenshot">
+  📸 Add custom app dialog screenshot placeholder
+</div>
+
+## Connection Types
+
+MCPMate supports multiple MCP connection methods:
+
+- **stdio**: Direct process communication (most common)
+- **SSE**: Server-Sent Events over HTTP
+- **HTTP**: RESTful API communication
+
+## Troubleshooting
+
+Common issues and solutions:
+
+- **App not detected**: Ensure it's installed in standard locations
+- **Connection failed**: Check app permissions and firewall settings
+- **Tools not appearing**: Verify the app supports your active configuration suit
+
+---
+
+<details>
+<summary>Advanced app configuration</summary>
+
+For custom setups, you can manually edit app configurations and specify custom proxy endpoints or authentication methods.
+
+</details>

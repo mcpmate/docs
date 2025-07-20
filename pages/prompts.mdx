@@ -1,0 +1,111 @@
+---
+title: "Prompts"
+description: "Manage prompt libraries and templates for better AI interactions"
+sidebarLabel: "Prompts"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+# Prompts
+
+Prompts in MCP are reusable templates and workflows that servers can define to standardize and share common LLM interactions.
+
+<Callout type="info">
+  Learn more about MCP prompts in the [official documentation](https://modelcontextprotocol.io/docs/concepts/prompts).
+</Callout>
+
+<div className="placeholder-screenshot">
+  📸 Prompts management interface screenshot placeholder
+</div>
+
+## What are Prompts?
+
+In MCP, prompts are predefined templates that:
+- **Accept dynamic arguments**: Use parameters to customize content
+- **Include context from resources**: Embed data from MCP resources
+- **Chain multiple interactions**: Create complex workflows
+- **Guide specific workflows**: Standardize common LLM tasks
+- **Surface as UI elements**: Appear as slash commands or quick actions
+
+Prompts are discovered via `prompts/list` and retrieved using `prompts/get` requests.
+
+## Prompt Categories
+
+<CardGroup cols={2}>
+  <Card title="Code Generation" icon="code">
+    Templates for creating functions, classes, and documentation
+  </Card>
+  <Card title="Content Writing" icon="pen-tool">
+    Blog posts, emails, marketing copy templates
+  </Card>
+  <Card title="Analysis" icon="search">
+    Data analysis, research, and summarization prompts
+  </Card>
+  <Card title="Debugging" icon="bug">
+    Error analysis and troubleshooting templates
+  </Card>
+</CardGroup>
+
+## Managing Prompt Libraries
+
+### Built-in Libraries
+MCPMate includes curated prompt collections:
+- **General**: Common AI interaction patterns
+- **Development**: Code-focused prompts and templates
+- **Writing**: Content creation and editing prompts
+- **Research**: Information gathering and analysis
+
+### Custom Prompts
+Create your own prompt templates:
+1. Click **New Prompt** in the Prompts panel
+2. Write your template with variable placeholders: `{{variable_name}}`
+3. Add tags and categories for easy discovery
+4. Test the prompt and save
+
+<Callout type="info">
+  Use `{{variable_name}}` syntax for dynamic content that gets filled in when the prompt is used.
+</Callout>
+
+## Prompt Features
+
+### Variables and Placeholders
+- **Dynamic content**: `{{project_name}}`, `{{file_type}}`, etc.
+- **Optional sections**: Conditional text based on context
+- **Default values**: Fallback content when variables aren't provided
+
+### Version Control
+- **Prompt history**: Track changes over time
+- **Rollback**: Restore previous versions
+- **Branching**: Create variations of successful prompts
+
+### Sharing and Import
+- **Export prompts**: Share with team members
+- **Import libraries**: Add community-created prompt sets
+- **Sync across devices**: Keep prompts consistent everywhere
+
+<div className="placeholder-screenshot">
+  📸 Prompt editor interface screenshot placeholder
+</div>
+
+## Using Prompts
+
+Prompts are automatically available in your client applications:
+- **Auto-suggestions**: Relevant prompts appear based on context
+- **Quick access**: Search and insert prompts instantly
+- **Variable filling**: Interactive forms for prompt variables
+
+## Best Practices
+
+- **Clear naming**: Use descriptive names for easy discovery
+- **Good documentation**: Add usage notes and examples
+- **Regular updates**: Refine prompts based on results
+- **Team sharing**: Collaborate on effective prompt libraries
+
+---
+
+<details>
+<summary>Advanced prompt management</summary>
+
+Configure prompt auto-completion, set up conditional logic for complex templates, and integrate with external prompt repositories.
+
+</details>

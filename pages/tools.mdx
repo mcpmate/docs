@@ -1,0 +1,107 @@
+---
+title: "Tools"
+description: "Manage and configure MCP tools for your workflows"
+sidebarLabel: "Tools"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+# Tools
+
+Tools are executable functions that MCP servers expose to clients, enabling LLMs to interact with external systems, perform computations, and take actions in the real world.
+
+<Callout type="info">
+  Learn more about MCP tools in the [official documentation](https://modelcontextprotocol.io/docs/concepts/tools).
+</Callout>
+
+<div className="placeholder-screenshot">
+  📸 Tools management interface screenshot placeholder
+</div>
+
+## What are Tools?
+
+In MCP, tools are functions that:
+- **Execute operations**: Perform specific tasks like file operations, API calls, or calculations
+- **Accept parameters**: Use JSON Schema to define input requirements
+- **Return structured results**: Provide text or binary content back to the LLM
+- **Enable real-world actions**: Allow LLMs to interact with external systems
+
+Tools are discovered through `tools/list` requests and invoked via `tools/call` requests.
+
+## Tool Categories
+
+<CardGroup cols={2}>
+  <Card title="Web & API" icon="globe">
+    HTTP requests, web scraping, API integrations
+  </Card>
+  <Card title="File System" icon="folder">
+    File operations, search, content analysis
+  </Card>
+  <Card title="Data Processing" icon="database">
+    Text processing, format conversion, analysis
+  </Card>
+  <Card title="Development" icon="code">
+    Code generation, testing, documentation
+  </Card>
+</CardGroup>
+
+## Managing Tools
+
+### Enable/Disable Tools
+- Toggle individual tools on or off
+- Tools are grouped by their parent server
+- Disabled tools won't appear in client applications
+- Changes take effect immediately
+
+### Tool Priorities
+When multiple tools have similar functions:
+- Set priority levels (High, Normal, Low)
+- Higher priority tools are suggested first
+- Helps resolve conflicts between similar capabilities
+
+### Tool Configuration
+Some tools accept configuration parameters:
+- **Rate limits**: Requests per minute/hour
+- **Timeouts**: Maximum execution time
+- **Default parameters**: Pre-filled values for common use cases
+
+<Callout type="info">
+  Tool availability depends on your active configuration suit. Switch suits to access different tool sets.
+</Callout>
+
+## Tool Conflicts
+
+When tools from different servers provide similar functionality:
+
+1. **Automatic resolution**: MCPMate suggests the highest-priority tool
+2. **Manual override**: You can specify which tool to use
+3. **Conflict indicators**: Visual warnings when conflicts exist
+
+<div className="placeholder-screenshot">
+  📸 Tool conflict resolution interface screenshot placeholder
+</div>
+
+## Custom Tools
+
+Advanced users can:
+- Create custom tool wrappers
+- Combine multiple tools into workflows
+- Set up tool aliases for easier access
+- Configure tool-specific authentication
+
+## Monitoring Tool Usage
+
+Track tool performance:
+- **Execution count**: How often each tool is used
+- **Success rate**: Percentage of successful executions
+- **Average response time**: Performance metrics
+- **Error logs**: Failed execution details
+
+---
+
+<details>
+<summary>Advanced tool management</summary>
+
+Configure custom tool parameters, set up tool chaining workflows, and implement custom authentication for enterprise tools.
+
+</details>

@@ -1,0 +1,106 @@
+---
+title: "Logs"
+description: "View system logs and troubleshoot issues"
+sidebarLabel: "Logs"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+# Logs
+
+Monitor MCPMate system activity, debug issues, and track performance through comprehensive logging.
+
+<div className="placeholder-screenshot">
+  📸 Logs viewer interface screenshot placeholder
+</div>
+
+## Log Categories
+
+<CardGroup cols={2}>
+  <Card title="System Events" icon="activity">
+    Application startup, shutdown, and configuration changes
+  </Card>
+  <Card title="Server Activity" icon="server">
+    MCP server connections, health checks, and errors
+  </Card>
+  <Card title="Tool Execution" icon="tool">
+    Tool calls, parameters, responses, and performance
+  </Card>
+  <Card title="Client Connections" icon="plug">
+    App connections, disconnections, and communication
+  </Card>
+</CardGroup>
+
+## Log Levels
+
+- **Info**: Normal operation events and status updates
+- **Warning**: Non-critical issues that may need attention
+- **Error**: Failures and problems requiring investigation
+- **Debug**: Detailed technical information for troubleshooting
+
+<Callout type="info">
+  Debug logging can be enabled per component for detailed troubleshooting without overwhelming the log output.
+</Callout>
+
+## Filtering and Search
+
+### Filter Options
+- **Time range**: Last hour, day, week, or custom range
+- **Log level**: Show only specific severity levels
+- **Component**: Filter by servers, tools, or system components
+- **Keywords**: Search for specific messages or error codes
+
+### Advanced Search
+- **Regular expressions**: Pattern matching for complex searches
+- **Correlation IDs**: Track related events across components
+- **Performance metrics**: Find slow operations or timeouts
+
+<div className="placeholder-screenshot">
+  📸 Log filtering interface screenshot placeholder
+</div>
+
+## Log Export
+
+### Export Options
+- **Format**: Plain text, JSON, or CSV
+- **Time range**: Specify exact date/time boundaries
+- **Components**: Include specific servers or tools only
+- **Compression**: ZIP files for large log exports
+
+### Automated Exports
+- **Scheduled exports**: Daily or weekly log archives
+- **Error reports**: Automatic export when errors occur
+- **Performance reports**: Regular system health summaries
+
+## Troubleshooting Guide
+
+### Common Issues
+
+**Server Connection Failures**
+- Look for "connection refused" or "timeout" messages
+- Check server status and network connectivity
+- Verify server configuration and credentials
+
+**Tool Execution Errors**
+- Search for tool names and error codes
+- Check parameter validation failures
+- Review resource availability and permissions
+
+**Performance Issues**
+- Filter for "slow" or "timeout" warnings
+- Check resource usage spikes
+- Look for concurrent request limits
+
+### Log Analysis Tips
+- **Correlation**: Use timestamps to track event sequences
+- **Patterns**: Look for recurring errors or warnings
+- **Context**: Check surrounding log entries for full picture
+
+---
+
+<details>
+<summary>Advanced logging configuration</summary>
+
+Configure custom log formats, set up log rotation policies, and integrate with external monitoring systems for enterprise deployments.
+
+</details>

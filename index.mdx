@@ -1,7 +1,9 @@
 ---
-title: "Downloading MCPMate"
-description: "Welcome to the home of your new documentation"
+title: "Why use MCPMate?"
+description: "See how MCPMate streamlines your MCP servers and tools into a single desktop app."
 ---
+
+import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
 
 <img
   className="block dark:hidden"
@@ -17,34 +19,64 @@ description: "Welcome to the home of your new documentation"
   title={true}
 />
 
-## Setting up
+# Why use MCPMate?
 
-The first step to world-class documentation is setting up your editing environments.
+<Callout type="info">
+  MCPMate turns a scattered, repetitive MCP setup into a one-click desktop experience.
+</Callout>
+
+## Pain points today
+
+- **Repetitive setup** – every MCP-compatible editor (Cursor, Claude Desktop, Zed…) must be configured separately.
+- **Resource waste** – running multiple server instances consumes CPU and memory.
+- **Context switching** – changing projects or workflows means starting/stopping servers and hand-editing configs.
+
+## How MCPMate helps
 
 <CardGroup cols={2}>
-  <Card title="Edit Your Docs" icon="pen-to-square" href="https://mintlify.com/docs/quickstart">
-    Get your docs set up locally for easy development
+  <Card title="Config Suit" icon="layer-group">
+    Bundle servers, tools and prompts into reusable presets. Switch with a single click.
   </Card>
-  <Card title="Preview Changes" icon="image" href="https://mintlify.com/docs/development">
-    Preview your changes before you push to make sure they're perfect
+  <Card title="Unified proxy" icon="server">
+    A high-performance proxy exposes one endpoint, automatically merging tools from all connected servers.
+  </Card>
+  <Card title="Auto app detection" icon="plug">
+    MCPMate Desktop detects compatible apps on launch—no manual wiring required.
+  </Card>
+  <Card title="Clean UI" icon="window-maximize">
+    macOS-style interface that hides complexity yet keeps power users in control.
   </Card>
 </CardGroup>
 
-## Make it yours
+## Typical scenarios
 
-Update your docs to your brand and add valuable content for the best user conversion.
+<Tabs>
+  <Tab label="Writing">
+    Activate the *Writer* suit to connect Context7 and enrich your copy.
+  </Tab>
+  <Tab label="Coding">
+    Switch to the *Coder* suit, enable Fetch & Firecrawl tools, and scaffold tests in seconds.
+  </Tab>
+  <Tab label="Team work">
+    Share the *Default* suit across teammates to keep configurations in sync.
+  </Tab>
+</Tabs>
 
-<CardGroup cols={2}>
-  <Card title="Customize Style" icon="palette" href="https://mintlify.com/docs/settings/global">
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card title="Reference APIs" icon="code" href="https://mintlify.com/docs/api-playground/openapi">
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card title="Add Components" icon="screwdriver-wrench" href="https://mintlify.com/docs/content/components/accordions">
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card title="Get Inspiration" icon="stars" href="https://mintlify.com/customers">
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+## Before vs after MCPMate
+
+| Aspect | Traditional setup | With MCPMate |
+| ------ | ---------------- | ------------ |
+| Configuration time | High (per app) | Low (single place) |
+| System resources   | High           | Optimised proxy |
+| Workflow switch    | Manual edits   | One-click swap |
+
+## Next steps
+
+- Head over to [Quick Start](/pages/quickstart) to download and install MCPMate.
+- Peek at the [Dashboard](/pages/dashboard) for a live system overview once you launch the app.
+
+---
+
+<Callout type="info">
+  **Pricing**: MCPMate offers core features free for individual users. Advanced features and enterprise capabilities (team management, enhanced monitoring, deployment tools) require a paid subscription.
+</Callout>

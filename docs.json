@@ -17,8 +17,26 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "/pages/quickstart",
-              "/pages/development"
+              "/pages/quickstart"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "/pages/dashboard",
+              "/pages/client-apps",
+              "/pages/config-suits",
+              "/pages/servers",
+              "/pages/tools",
+              "/pages/prompts",
+              "/pages/resources"
+            ]
+          },
+          {
+            "group": "System",
+            "pages": [
+              "/pages/settings",
+              "/pages/logs"
             ]
           },
           {
@@ -39,7 +57,7 @@
         },
         {
           "anchor": "Support",
-          "href": "mailto:info@mcpmate.io",
+          "href": "https://docs.mcpmate.io/support",
           "icon": "envelope"
         }
       ]

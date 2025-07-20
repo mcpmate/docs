@@ -1,0 +1,79 @@
+---
+title: "Dashboard"
+description: "Monitor your MCP system status, resource usage and logs"
+sidebarLabel: "Dashboard"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+# Dashboard
+
+Your MCPMate control center showing system health, active servers, and real-time logs.
+
+<div className="placeholder-screenshot">
+  📸 Dashboard overview screenshot placeholder
+</div>
+
+## System Status
+
+<CardGroup cols={3}>
+  <Card title="Active Suits" icon="layer-group">
+    Shows currently enabled configuration suits and their server count.
+  </Card>
+  <Card title="Running Servers" icon="server">
+    Live count of MCP servers with health indicators (green/yellow/red).
+  </Card>
+  <Card title="Connected Apps" icon="plug">
+    Number of client applications currently using MCPMate proxy.
+  </Card>
+</CardGroup>
+
+## Resource Usage
+
+Monitor CPU and memory consumption to ensure optimal performance.
+
+- **CPU Usage**: Real-time processor utilization by MCPMate and connected servers
+- **Memory Usage**: RAM consumption with breakdown by component
+- **Network**: Data transfer rates for MCP communications
+
+<Callout type="info">
+  Resource metrics update every 10 seconds. High usage may indicate server configuration issues.
+</Callout>
+
+## System Logs
+
+<div className="placeholder-screenshot">
+  📸 System logs panel screenshot placeholder
+</div>
+
+The logs panel shows:
+- Server startup/shutdown events
+- Tool execution requests and responses  
+- Client app connection status
+- Configuration changes
+- Error messages and warnings
+
+### Log Filtering
+
+Use the filter controls to:
+- Show logs from specific servers or suits
+- Filter by log level (Info, Warning, Error)
+- Search for specific messages or timestamps
+- Export logs for troubleshooting
+
+## Quick Actions
+
+From the Dashboard, you can:
+- Toggle configuration suits on/off
+- Restart problematic servers
+- View detailed server information
+- Access system settings
+
+---
+
+<details>
+<summary>Advanced monitoring</summary>
+
+For detailed performance analysis, check the individual server status pages and consider enabling debug logging for specific components.
+
+</details>

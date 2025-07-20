@@ -1,0 +1,115 @@
+---
+title: "Resources"
+description: "Manage data sources, models, and knowledge bases"
+sidebarLabel: "Resources"
+---
+
+import { Callout, CardGroup, Card } from "mintlify/components";
+
+# Resources
+
+Resources in MCP allow servers to expose data and content that can be read by clients and used as context for LLM interactions.
+
+<Callout type="info">
+  Learn more about MCP resources in the [official documentation](https://modelcontextprotocol.io/docs/concepts/resources).
+</Callout>
+
+<div className="placeholder-screenshot">
+  📸 Resources management interface screenshot placeholder
+</div>
+
+## What are Resources?
+
+In MCP, resources represent any kind of data that servers expose to clients:
+- **File contents**: Source code, configuration files, documents
+- **Database records**: Structured data from databases
+- **API responses**: Data from external services
+- **Live system data**: Real-time information and metrics
+- **Media files**: Images, screenshots, audio, video
+- **Log files**: System and application logs
+
+Each resource is identified by a unique URI (like `file:///path/to/file` or `postgres://database/table`) and can contain either text or binary data encoded in base64.
+
+## Resource Types
+
+<CardGroup cols={2}>
+  <Card title="Text Resources" icon="file-text">
+    UTF-8 encoded content like source code, configs, JSON, and plain text
+  </Card>
+  <Card title="Binary Resources" icon="file">
+    Base64-encoded data like images, PDFs, audio, and video files
+  </Card>
+  <Card title="Direct Resources" icon="list">
+    Static resources exposed via `resources/list` requests
+  </Card>
+  <Card title="Template Resources" icon="template">
+    Dynamic resources using URI templates following RFC 6570
+  </Card>
+</CardGroup>
+
+Resources are discovered through `resources/list` requests and read using `resources/read` requests.
+
+## Managing Resources
+
+### Adding Resources
+1. Click **Add Resource** in the Resources panel
+2. Choose the resource type and source
+3. Configure access permissions and caching
+4. Test the connection and save
+
+### Resource Status
+Monitor resource health:
+- **Availability**: Online/offline status
+- **Last sync**: When data was last updated
+- **Size**: Storage usage and item count
+- **Access count**: Usage statistics
+
+<Callout type="info">
+  Resources are cached locally for faster access. Sync frequency can be configured per resource.
+</Callout>
+
+## Access Control
+
+### Permissions
+Control which servers and tools can access resources:
+- **Read-only**: View and search content
+- **Read-write**: Modify and update data
+- **Admin**: Full control including deletion
+
+### Privacy Settings
+- **Local only**: Resources stay on your machine
+- **Team shared**: Available to team members
+- **Public**: Accessible to all users (if applicable)
+
+<div className="placeholder-screenshot">
+  📸 Resource permissions interface screenshot placeholder
+</div>
+
+## Storage Management
+
+### Local Storage
+- **Cache location**: Where resources are stored locally
+- **Size limits**: Maximum storage per resource type
+- **Cleanup policies**: Automatic removal of old data
+
+### Sync Settings
+- **Update frequency**: How often to check for changes
+- **Bandwidth limits**: Control download speeds
+- **Offline access**: Cache critical resources locally
+
+## Troubleshooting
+
+Common resource issues:
+- **Sync failures**: Check network connectivity and permissions
+- **Storage full**: Clean up old cached data or increase limits
+- **Access denied**: Verify resource permissions and authentication
+- **Slow performance**: Review cache settings and local storage
+
+---
+
+<details>
+<summary>Advanced resource management</summary>
+
+Configure custom data connectors, set up resource mirroring for high availability, and implement custom indexing for large knowledge bases.
+
+</details>
