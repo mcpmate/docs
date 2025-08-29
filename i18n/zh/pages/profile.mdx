@@ -1,7 +1,7 @@
 ---
-title: "配置套件"
+title: "配置"
 description: "为不同工作流程创建和管理配置预设"
-sidebarLabel: "配置套件"
+sidebarLabel: "配置"
 ---
 
 import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
@@ -9,23 +9,23 @@ import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
 <img
   className="block dark:hidden"
   src="/i18n/zh/images/config-suits.jpg"
-  alt="Config Suits"
+  alt="配置"
   title={true}
 />
 
-## 什么是配置套件？
+## 什么是配置？
 
-配置套件是一个命名的集合，包含：
+配置是一个命名的集合，包含：
 - MCP 服务器及其设置
 - 启用的工具及其优先级
 - 提示库和模板
 - 资源访问权限
 
-将套件视为可以即时切换的"配置文件"。
+将配置视为可以即时切换的预设。
 
-## 默认套件
+## 默认配置
 
-MCPMate 预装了几个预配置的套件：
+MCPMate 预装了几个预配置的配置：
 
 <CardGroup cols={3}>
   <Card title="Default" icon="home">
@@ -39,11 +39,11 @@ MCPMate 预装了几个预配置的套件：
   </Card>
 </CardGroup>
 
-## 创建自定义套件
+## 创建自定义配置
 
 <Tabs>
   <Tab label="从头开始">
-    1. 在配置套件面板中点击 **新建套件**
+    1. 在配置面板中点击 **新建配置**
     2. 给它一个描述性名称（例如，"数据分析"）
     3. 从可用列表中添加服务器
     4. 配置工具优先级和权限
@@ -51,53 +51,53 @@ MCPMate 预装了几个预配置的套件：
   </Tab>
   
   <Tab label="克隆现有">
-    1. 选择一个现有套件作为模板
+    1. 选择一个现有配置作为模板
     2. 点击 **克隆** 并给它一个新名称
     3. 根据需要修改服务器、工具或设置
     4. 保存您的自定义版本
   </Tab>
 </Tabs>
 
-## 切换套件
+## 切换配置
 
 <Callout type="info">
-  切换套件立即生效—无需重启客户端应用。
+  切换配置立即生效—无需重启客户端应用。
 </Callout>
 
-切换活动套件：
-1. 打开配置套件面板
-2. 点击您想要切换的套件旁边的切换按钮
+切换活动配置：
+1. 打开配置面板
+2. 点击您想要切换的配置旁边的切换按钮
 3. 等待 "Active" 指示器出现
 4. 您的客户端应用现在可以访问新的工具集
 
-## 套件管理
+## 配置管理
 
-### 编辑套件
+### 编辑配置
 - 修改服务器配置
 - 添加或删除工具
 - 调整工具优先级
 - 更新提示词库
 
-### 分享套件（Coming soon）
-- 导出套件为 JSON 文件
-- 从队友导入套件
+### 分享配置（Coming soon）
+- 导出配置为 JSON 文件
+- 从队友导入配置
 - 团队一致性版本控制
 
 <div className="placeholder-screenshot">
-  📸 Suit editing interface screenshot placeholder
+  📸 配置编辑界面截图占位符
 </div>
 
 ## 最佳实践
 
 - **描述性名称**：使用清晰、工作流程特定的名称
-- **最小化套件**：仅包含必要的服务器以减少资源使用
-- **定期清理**：删除未使用或过时的套件
+- **最小化配置**：仅包含必要的服务器以减少资源使用
+- **定期清理**：删除未使用或过时的配置
 
 ---
 
 <details>
-<summary>高级套件配置</summary>
+<summary>高级配置设置</summary>
 
-您可以创建条件规则，为每个套件设置资源限制，并根据活动应用程序或时间配置自动套件切换。
+您可以创建条件规则，为每个配置设置资源限制，并根据活动应用程序或时间配置自动配置切换。
 
 </details>

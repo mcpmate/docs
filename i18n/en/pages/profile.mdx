@@ -1,7 +1,7 @@
 ---
-title: "Config Suits"
+title: "Profile"
 description: "Create and manage configuration presets for different workflows"
-sidebarLabel: "Config Suits"
+sidebarLabel: "Profile"
 ---
 
 import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
@@ -9,23 +9,23 @@ import { Callout, CardGroup, Card, Tabs, Tab } from "mintlify/components";
 <img
   className="block dark:hidden"
   src="/i18n/en/images/config-suits.jpg"
-  alt="Config Suits"
+  alt="Profile"
   title={true}
 />
 
-## What are Config Suits?
+## What is Profile?
 
-A configuration suit is a named collection of:
+A profile is a named collection of:
 - MCP servers and their settings
 - Enabled tools and their priorities
 - Prompt libraries and templates
 - Resource access permissions
 
-Think of suits as "profiles" that you can switch between instantly.
+Think of profile as presets that you can switch between instantly.
 
-## Default Suits
+## Default Profile
 
-MCPMate ships with several pre-configured suits:
+MCPMate ships with several pre-configured profile:
 
 <CardGroup cols={3}>
   <Card title="Default" icon="home">
@@ -39,11 +39,11 @@ MCPMate ships with several pre-configured suits:
   </Card>
 </CardGroup>
 
-## Creating Custom Suits
+## Creating Custom Profile
 
 <Tabs>
   <Tab label="From Scratch">
-    1. Click **New Suit** in the Config Suits panel
+    1. Click **New Profile** in the Profile panel
     2. Give it a descriptive name (e.g., "Data Analysis")
     3. Add servers from the available list
     4. Configure tool priorities and permissions
@@ -51,36 +51,36 @@ MCPMate ships with several pre-configured suits:
   </Tab>
   
   <Tab label="Clone Existing">
-    1. Select an existing suit to use as a template
+    1. Select an existing profile to use as a template
     2. Click **Clone** and give it a new name
     3. Modify servers, tools, or settings as needed
     4. Save your customized version
   </Tab>
 </Tabs>
 
-## Switching Suits
+## Switching Profile
 
 <Callout type="info">
-  Switching suits takes effect immediately—no need to restart client apps.
+  Switching profile takes effect immediately—no need to restart client apps.
 </Callout>
 
-To switch active suits:
-1. Open the Config Suits panel
-2. Click the toggle next to your desired suit
+To switch active profile:
+1. Open the Profile panel
+2. Click the toggle next to your desired profile
 3. Wait for the "Active" indicator to appear
 4. Your client apps now have access to the new tool set
 
-## Suit Management
+## Profile Management
 
-### Editing Suits
+### Editing Profile
 - Modify server configurations
 - Add or remove tools
 - Adjust tool priorities
 - Update prompt libraries
 
-### Sharing Suits
-- Export suits as JSON files
-- Import suits from teammates
+### Sharing Profile
+- Export profile as JSON files
+- Import profile from teammates
 - Version control for team consistency
 
 ### Backup and Restore
@@ -89,21 +89,21 @@ To switch active suits:
 - Restore from backup if needed
 
 <div className="placeholder-screenshot">
-  📸 Suit editing interface screenshot placeholder
+  📸 Profile editing interface screenshot placeholder
 </div>
 
 ## Best Practices
 
 - **Descriptive names**: Use clear, workflow-specific names
-- **Minimal suits**: Include only necessary servers to reduce resource usage
-- **Regular cleanup**: Remove unused or outdated suits
-- **Team coordination**: Share suit configurations for consistent setups
+- **Minimal profile**: Include only necessary servers to reduce resource usage
+- **Regular cleanup**: Remove unused or outdated profile
+- **Team coordination**: Share profile configurations for consistent setups
 
 ---
 
 <details>
-<summary>Advanced suit configuration</summary>
+<summary>Advanced profile configuration</summary>
 
-You can create conditional rules, set resource limits per suit, and configure automatic suit switching based on active applications or time of day.
+You can create conditional rules, set resource limits per profile, and configure automatic profile switching based on active applications or time of day.
 
 </details>
