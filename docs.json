@@ -26,7 +26,7 @@
             "pages": [
               "i18n/en/pages/dashboard",
               "i18n/en/pages/client-apps",
-              "i18n/en/pages/config-suits",
+              "i18n/en/pages/profile",
               {
                 "group": "MCP Servers",
                 "pages": [
@@ -69,7 +69,7 @@
             "pages": [
               "i18n/zh/pages/dashboard",
               "i18n/zh/pages/client-apps",
-              "i18n/zh/pages/config-suits",
+              "i18n/zh/pages/profile",
               {
                 "group": "MCP 服务器",
                 "pages": [
